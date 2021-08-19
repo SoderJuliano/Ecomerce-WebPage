@@ -1,0 +1,227 @@
+
+$col-primary: white;
+$border-colors : black  solid 2px;
+.swiper-container {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    
+}
+.swiper-slide{
+  z-index: 0;
+}
+.header-top{
+  height: 80px !important;
+  width: 100%;
+  background-color:  transparent; 
+  display: flex;
+  top: 5px;
+  z-index: 2;
+
+  .logo{
+    width: 15%;
+    height: 90%;
+    border:  $border-colors;
+  }
+  .menu{
+    width: 70%;
+    height: 100%;
+    border:  $border-colors;
+    margin-left: 1%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .rigth-menu{
+    display: flex;
+    justify-content: space-around;
+    padding: 1%;
+    width: 15%;
+
+    img{
+      width: 35px;
+      height: 35px;
+    }
+  }
+}
+.header{
+    display: block;
+    justify-content: center;
+    margin: 0 auto;
+    height: 600px;
+    background-image: url("https://picsum.photos/1800/600?grayscale");
+    background-repeat: no-repeat;
+    color: $col-primary;
+
+    a{
+      text-decoration-color:$col-primary;
+      -moz-text-decoration-color: $col-primary;
+      color: $col-primary;
+    }
+    h1{
+      text-align: center;
+      padding-top: 200px;
+      margin: 0 auto;
+    }
+}
+@media screen and(min-width:1800px) {
+  .header{
+    display: block;
+    justify-content: center;
+    margin: 0 auto;
+    height: 500px;
+    background-image: url("https://picsum.photos/2800/500?grayscale");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+.corpo-container{
+  display: flex;
+
+  .left-container{
+    padding: 20%;
+    height: 500px;
+    background: whitesmoke;
+
+    h2{
+      text-align: left;
+      word-break: keep-all;
+    }
+    p{
+      text-align: left;
+      padding-top: 10%;
+      width: 80%;
+      word-break: keep-all;
+    }
+    button{
+      color: white;
+      background-color: black;
+      margin: 0 auto;
+      padding: 10px;
+      width: 200px;
+      margin-top: 10%;
+    }
+  }
+  .left-container2{
+    padding: 20%;
+    height: 500px;
+    background: $col-primary;
+
+    h2{
+      text-align: left;
+    }
+    p{
+      text-align: left;
+      padding-top: 10%;
+      width: 80%;
+      word-break: keep-all;
+    }
+    button{
+      color: white;
+      background-color: black;
+      margin: 0 auto;
+      padding: 10px;
+      width: 200px;
+      margin-top: 10%;
+    }
+  }
+  .rigth-container{
+    width: 100%;
+    min-height: 600px;
+    max-height: 100%;
+    float: right;
+    background-color: $col-primary;
+    display: block;
+  
+    .img-tamanho1{
+      position: relative;
+      float: right;
+      width: 45%;
+      top: 10%;
+      height: 500px;
+      z-index: 2;
+      filter: grayscale(100%);
+      opacity: 40%;
+    }
+    .img-tamanho2{
+      position: relative;
+      top: -490px;
+      width: 65%;
+      height: 500px;
+      left: 25%;
+      z-index: 2;
+      filter: grayscale(70%);
+    }
+    .img-tamanho3{
+      position: relative;
+      top: -450px;
+      width: 95%;
+      height: 520px;
+      left: -70%;
+      z-index: 2;
+      filter: grayscale(50%);
+    }
+    .img-tamanho4{
+      position: relative;
+      top: -600px;
+      width: 100%;
+      height: 650px;
+      z-index: 2;
+      filter: grayscale(0%);
+    }
+  }
+  
+}
+.products-container{
+  display: block;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  text-align: center;
+  background-color: wheat;
+  
+
+  h2{
+    margin: 0 auto;
+  }
+  .products-list-container{
+    justify-content: space-around;
+    display: flex;
+    height: 100%;
+  }
+  .single-product-container{
+    width: 20%;
+    min-height: 400px;
+    max-height: 100%;
+    display: block;
+  }
+  .product{
+    display: block;
+    text-align: center;
+    height: 100%;
+  }
+  .img-div{
+    width: 100%;
+    height: 100%;
+    background-image: url("https://picsum.photos/200/200?random=5");
+    background-size: cover;
+    p{
+      position: relative;
+      bottom: -80%;
+      font-size: 20px;
+      color: $col-primary;
+      
+    }
+  }
+  .nome-produto{
+    width: 100px;
+    height: 100%;
+    margin: 0 auto; 
+    padding: 2%;
+  }
+ 
+}
+button{
+  width: 100%;
+  padding: 4%;
+  margin-top: 60px;
+}
