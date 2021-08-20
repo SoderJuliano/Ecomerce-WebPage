@@ -4,15 +4,20 @@ body {
 
 .search {
   display: none;
-  width: 80%;
-  -webkit-box-shadow: black 2px -2px 2px 2px;
-          box-shadow: black 2px -2px 2px 2px;
+  position: absolute;
+  width: 60%;
+  -webkit-box-shadow: black 2px 2px 2px 2px;
+          box-shadow: black 2px 2px 2px 2px;
   text-align: center;
   margin: 0 auto;
   background-color: transparent;
   color: black;
-  height: 20px;
-  margin-top: 20px;
+  height: 40px;
+  margin-top: 120px;
+  margin-left: 20%;
+  border-radius: 20px;
+  color: white;
+  text-shadow: black 2px 2px;
 }
 
 @media screen and (max-width: 1000px) {
