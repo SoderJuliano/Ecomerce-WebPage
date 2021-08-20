@@ -21,12 +21,13 @@
                 <p><a href="">menu</a></p>
             </div>
             <div class="rigth-menu">
-                <img src="/lupa.png"alt="" />
+                <img onclick="searchShow()" src="/lupa.png"alt="" />
                 <img src="/avatar.png"alt="" />
                 <img src="/cesto.png"alt="" />
             </div>
         </div>
-        <a href=""><h1>TITULO</h1></a>
+        <input onfocusout="searchHidden()" type="text" class="search" placeholder="Digite aqui">
+        <a href=""><h1>TÍTULO</h1></a>
     </div>
     <div class="corpo-container">
         <div class="left-big-container">
@@ -130,7 +131,7 @@
                 <h4>CATEGORIA</h4>
                 <div class="product">
                     <div class="img-div">
-                        <img src="" alt="" class="icon">
+                        <img src="./cesto.png" alt="" class="icon">
                         <p class="valor">R$0000,00</p>
                     </div>
                     <p class="nome-produto">Nome do produto</p>
@@ -221,7 +222,7 @@
             </div>
         </div>
         <div class="img-container-rigth">
-            <img src="https://picsum.photos/700/900?random=4" alt="imagem 4" class="img-tamanho4">
+            <img src="https://picsum.photos/500/300?random=4" alt="imagem 4" class="img-tamanho4">
         </div>
     </div> <!-- Swiper -->
         <div class="swiper-big-container">
@@ -485,6 +486,13 @@
           clickable: true,
         },
       });
+
+      function searchShow(){
+          document.getElementsByClassName('search')[0].style.display = 'block';
+      }
+      function searchHidden(){
+        document.getElementsByClassName('search')[0].style.display = 'none';
+      }
     </script>
 </body>
 <link rel="preconnect" href="https://fonts.googleapis.com">
