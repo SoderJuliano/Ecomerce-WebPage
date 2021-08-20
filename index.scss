@@ -1,6 +1,7 @@
 
 $col-primary: white;
 $border-colors : black  solid 2px;
+$font-size-titles: 40px; 
 .swiper-container {
     width: 100%;
     height: 500px;
@@ -20,22 +21,35 @@ $border-colors : black  solid 2px;
 
   .logo{
     width: 15%;
-    height: 90%;
+    height: 100%;
     border:  $border-colors;
+    background-color: whitesmoke;
+    img{
+      width: 100%;
+      height: 100%;
+    }
   }
   .menu{
-    width: 70%;
+    width: 67%;
     height: 100%;
     border:  $border-colors;
     margin-left: 1%;
     display: flex;
     justify-content: space-around;
+    background-color: whitesmoke;
+
+    p{
+      text-shadow: rgb(172, 172, 172) 2px 2px 2px;
+    }
   }
   .rigth-menu{
     display: flex;
     justify-content: space-around;
     padding: 1%;
     width: 15%;
+    margin-left: 20px;
+    background-color: whitesmoke;
+    border:  $border-colors;
 
     img{
       width: 35px;
@@ -55,7 +69,7 @@ $border-colors : black  solid 2px;
     a{
       text-decoration-color:$col-primary;
       -moz-text-decoration-color: $col-primary;
-      color: $col-primary;
+      color: black;
     }
     h1{
       text-align: center;
@@ -172,16 +186,18 @@ $border-colors : black  solid 2px;
   
 }
 .products-container{
+  z-index: 2;
+  margin-top: -500px;
   display: block;
   width: 100%;
-  height: 100%;
+  min-height: 800px;
   justify-content: center;
   text-align: center;
-  background-color: wheat;
-  
+  background-color: $col-primary;
 
   h2{
     margin: 0 auto;
+    margin-top: 200px;
   }
   .products-list-container{
     justify-content: space-around;
@@ -214,7 +230,6 @@ $border-colors : black  solid 2px;
   }
   .nome-produto{
     width: 100px;
-    height: 100%;
     margin: 0 auto; 
     padding: 2%;
   }
@@ -224,4 +239,266 @@ button{
   width: 100%;
   padding: 4%;
   margin-top: 60px;
+}
+.alone-title{
+  width: 100%;
+  text-align: center;
+  height: 250px;
+  padding-top: 40%;
+
+  h2{
+    font-size: $font-size-titles;
+    width: 700px;
+    margin: -100px auto;
+  }
+}
+.left-big-container2{
+  width: 60%;
+  min-height: 600px;
+  max-height: 800px;
+  background-color: whitesmoke;
+
+  .left-container3{
+    padding: 20%;
+
+    h2{
+      padding-right: 20%;
+    }
+    p{
+      padding-right: 40%;
+      padding-top: 10%;
+    }
+    button{
+      width: 40%;
+      background-color: black;
+      color: $col-primary;
+    }
+  }
+}
+.img-container-rigth{
+  float: right;
+  width: 40%;
+  position: relative;
+  margin-top: -100px;
+}
+.swiper-big-container{
+ background-color: whitesmoke;
+ padding-top: 10%;
+ padding-bottom: 10%;
+ min-height: 1000px;
+ height: 100%;
+
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+    margin-top: 10%;
+    overflow: visible;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: whitesmoke;
+  
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: block;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+
+    h2{
+      width: 60%;
+      font-size: $font-size-titles;
+    }
+    a{
+      text-decoration-color: black;
+      color: black;
+    }
+    .underphoto-info{
+      text-align: start;
+      margin-left: 60px;
+      padding-top: 20px;
+    }
+    p{
+      word-break: keep-all;
+      width: 50%;
+    }
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  #first-swiper-img{
+    margin-top: 100px;
+    position: relative;
+    left: 100px;
+    height: 500px;
+    z-index: 2;
+  }
+  #first-swiper-img:hover{
+    transform: scale(1.2);
+    z-index: 5;
+    transition: all 1s;
+  }
+  #second-swiper-img{
+    position: relative;
+    z-index: 1;
+  }
+  #second-swiper-img:hover{
+    transform: scale(1.2);
+    z-index: 5;
+    transition: all 1s;
+  }
+  #third-swiper-img{
+    position: relative;
+    z-index: 0;
+    left: -50px;
+    margin-top: 100px;
+    height: 500px;
+  }
+  #third-swiper-img:hover{
+    transform: scale(1.2);
+    z-index: 5;
+    transition: all 1s;
+  }
+}
+.pre-botton-container{
+  display: block;
+  background-image: url("https://picsum.photos/1000/900?grayscale");
+  background-size: cover;
+  height: 700px;
+  color: $col-primary;
+
+  h2{
+    float: right;
+    margin-right: 150px;
+    margin-top: 15%;
+    text-shadow: black 2px 2px 2px;
+    font-size: $font-size-titles;
+    width: 300px;
+  }
+ 
+}
+#banner-img{
+  position: relative;
+  margin-top: 40px;
+  margin-left: 300px;
+  box-shadow: gray -2px 2px 20px 1px;
+}
+.p-container{
+  margin-left: 300px;
+  padding-top: 100px;
+
+  p{
+    text-shadow: black 2px 2px 2px;
+  }
+}
+.bottom{
+
+  height: 500px;
+  padding-top: 200px;
+  text-align: center;
+  a{
+    text-decoration-color: black;
+    color: black;
+  }
+  p{
+    font-size: 30px;
+  }
+}
+.bottom-bottom{
+  display: flex;
+  margin-top: 20px;
+  width: 80%;
+  margin-left: 300px;
+  justify-content: space-around;
+
+  p{
+    width: 210px;
+    font-weight: bold;
+  }
+  button{
+    color: white;
+      background-color: black;
+      margin: 0 auto;
+      padding: 10px;
+      width: 250px;
+      margin-top: 1%;
+      font-size: 25px;
+  }
+  input{
+    padding-top: 30px;
+    width: 60%;
+    height: 60px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 25px;
+    margin-left: 30px;
+  }
+  input:focus{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+  }
+}
+body{
+  font-family: 'PT Sans', sans-serif;
+}
+.end-bottom-container{
+  display: block;
+  background-color: whitesmoke;
+  text-align: center;
+
+  .end-bottom{
+    display: flex;
+    margin: 10%;
+    padding-top: 60px;
+    .logo{
+      width: 250px;
+      height: 150px;
+      
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .menu{
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  p{
+    padding-bottom: 20px;
+  }
+}
+.sub-social-bottom{
+  display: block;
+  height: 200px;
+  margin-top: 40px;
+
+  img{
+    width: 25px;
+    height: 25px;
+  }
+  a{
+    text-decoration-color: black;
+    color: black;
+  }
+}
+img{
+  box-shadow: 2px 2px 20px 1px;
 }
