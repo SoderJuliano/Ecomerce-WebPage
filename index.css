@@ -260,13 +260,6 @@ body {
     font-size: 10px;
     color: white;
   }
-  .products-container .img-div .icon {
-    display: none;
-    width: 25px;
-    height: 25px;
-    background-color: transparent;
-    margin-top: 20px;
-  }
   .products-container .nome-produto {
     margin: 0 auto;
     padding-top: 2%;
@@ -805,13 +798,6 @@ body {
     font-size: 20px;
     color: white;
   }
-  .products-container .img-div .icon {
-    display: none;
-    width: 25px;
-    height: 25px;
-    background-color: transparent;
-    margin-top: 20px;
-  }
   .products-container .nome-produto {
     width: 100px;
     margin: 0 auto;
@@ -1100,5 +1086,22 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
   }
+}
+
+.img-div:hover .icon {
+  display: block;
+}
+
+.icon {
+  display: none;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: transparent;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  z-index: 4;
+  margin: 10% 9%;
 }
 /*# sourceMappingURL=index.css.map */

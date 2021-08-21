@@ -251,14 +251,6 @@ h2{
     color: $col-primary;
     
   }
-
-  .icon{
-    display: none;
-    width: 25px;
-    height: 25px;
-    background-color: transparent;
-    margin-top: 20px;
-  }
   
 }
 .nome-produto{
@@ -792,13 +784,6 @@ h2{
     color: $col-primary;
     
   }
-  .icon{
-    display: none;
-    width: 25px;
-    height: 25px;
-    background-color: transparent;
-    margin-top: 20px;
-  }
 }
 .nome-produto{
   width: 100px;
@@ -1090,4 +1075,17 @@ box-shadow: 2px 2px 20px 1px;
   background-repeat: no-repeat;
   background-size: cover;
 }
+}
+.img-div:hover .icon{
+  display: block;
+}
+.icon{
+  display: none;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: transparent;
+  align-self: center;
+  z-index: 4;
+  margin: 10% 9%;
 }
