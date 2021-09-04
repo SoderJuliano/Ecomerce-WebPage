@@ -221,7 +221,7 @@ background-color: $col-primary;
 
 h2{
   margin-left: 10%;
-  margin-top: 10px;
+  margin-top: 200px;
 }
 .products-list-container{
   width: 100%;
@@ -620,7 +620,8 @@ z-index: 2;
   background-image: url("https://picsum.photos/1800/600?grayscale");
   background-repeat: no-repeat;
   color: $col-primary;
-
+  width: 100%;
+  
   a{
     text-decoration-color:$col-primary;
     -moz-text-decoration-color: $col-primary;
@@ -707,17 +708,18 @@ display: flex;
     float: right;
     width: 45%;
     top: 10%;
-    height: 500px;
+    height: 300px;
     z-index: 2;
     filter: grayscale(100%);
     opacity: 40%;
   }
   .img-tamanho2{
     position: relative;
-    top: -490px;
+    top: -290px;
     width: 65%;
-    height: 500px;
-    left: 25%;
+    min-width: 250px;
+    height: 400px;
+    left: 12%;
     z-index: 2;
     filter: grayscale(70%);
   }
@@ -737,6 +739,11 @@ display: flex;
     height: 650px;
     z-index: 2;
     filter: grayscale(0%);
+  }
+
+  img:hover{
+    z-index: 10;
+    opacity: 100%;
   }
 }
 
