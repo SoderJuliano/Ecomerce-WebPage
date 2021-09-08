@@ -227,7 +227,7 @@ body {
   }
   .products-container h2 {
     margin-left: 10%;
-    margin-top: 10px;
+    margin-top: 200px;
   }
   .products-container .products-list-container {
     width: 100%;
@@ -622,6 +622,7 @@ body {
     background-image: url("https://picsum.photos/1800/600?grayscale");
     background-repeat: no-repeat;
     color: white;
+    width: 100%;
   }
   .header a {
     -webkit-text-decoration-color: white;
@@ -715,7 +716,7 @@ body {
     float: right;
     width: 45%;
     top: 10%;
-    height: 500px;
+    height: 300px;
     z-index: 2;
     -webkit-filter: grayscale(100%);
             filter: grayscale(100%);
@@ -723,10 +724,11 @@ body {
   }
   .corpo-container .rigth-container .img-tamanho2 {
     position: relative;
-    top: -490px;
+    top: -290px;
     width: 65%;
-    height: 500px;
-    left: 25%;
+    min-width: 250px;
+    height: 400px;
+    left: 12%;
     z-index: 2;
     -webkit-filter: grayscale(70%);
             filter: grayscale(70%);
@@ -749,6 +751,10 @@ body {
     z-index: 2;
     -webkit-filter: grayscale(0%);
             filter: grayscale(0%);
+  }
+  .corpo-container .rigth-container img:hover {
+    z-index: 10;
+    opacity: 100%;
   }
   .products-container {
     z-index: 2;
