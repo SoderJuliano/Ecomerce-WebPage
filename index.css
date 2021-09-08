@@ -45,7 +45,6 @@ body {
   .header-top .logo {
     width: 10%;
     height: 100%;
-    border: gray solid 2px;
     background-color: rgba(245, 245, 245, 0.476);
     box-shadow: 1px 1px 10px 1px;
   }
@@ -56,7 +55,6 @@ body {
   .header-top .menu {
     width: 50%;
     height: 100%;
-    border: gray solid 2px;
     margin-left: 20px;
     display: flex;
     justify-content: space-around;
@@ -545,7 +543,6 @@ body {
   .header-top .logo {
     width: 15%;
     height: 100%;
-    border: gray solid 2px;
     background-color: rgba(245, 245, 245, 0.476);
     box-shadow: 1px 1px 10px 1px;
   }
@@ -556,7 +553,6 @@ body {
   .header-top .menu {
     width: 67%;
     height: 100%;
-    border: gray solid 2px;
     margin-left: 1%;
     display: flex;
     justify-content: space-around;
@@ -573,12 +569,10 @@ body {
     width: 15%;
     margin-left: 20px;
     background-color: rgba(245, 245, 245, 0.476);
-    border: gray solid 2px;
   }
   .header-top .rigth-menu img {
     width: 35px;
     height: 35px;
-    background-color: rgba(245, 245, 245, 0.476);
   }
 
   .header {

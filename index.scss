@@ -46,7 +46,6 @@ body{
 .logo{
   width: 10%;
   height: 100%;
-  border:  $border-colors;
   background-color: $background-top;
   box-shadow: 1px 1px 10px 1px;
 
@@ -58,7 +57,6 @@ body{
 .menu{
   width: 50%;
   height: 100%;
-  border:  $border-colors;
   margin-left: 20px;
   display: flex;
   justify-content: space-around;
@@ -573,7 +571,6 @@ z-index: 2;
 .logo{
   width: 15%;
   height: 100%;
-  border:  $border-colors;
   background-color: $background-top;
   box-shadow: 1px 1px 10px 1px;
 
@@ -585,7 +582,6 @@ z-index: 2;
 .menu{
   width: 67%;
   height: 100%;
-  border:  $border-colors;
   margin-left: 1%;
   display: flex;
   justify-content: space-around;
@@ -603,12 +599,10 @@ z-index: 2;
   width: 15%;
   margin-left: 20px;
   background-color: $background-top;
-  border:  $border-colors;
 
   img{
     width: 35px;
     height: 35px;
-    background-color: $background-top;
   }
 }
 }
